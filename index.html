@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SoyManu · Links</title>
+<meta name="description" content="Directos de GTA 6 desde Venezuela. Sígueme en Kick, Twitch, YouTube y TikTok.">
+<meta property="og:title" content="SoyManu · Links">
+<meta property="og:description" content="Directos de GTA 6 desde Venezuela. Sígueme en Kick, Twitch, YouTube y TikTok.">
+<meta property="og:image" content="foto.jpg">
+<link rel="icon" href="foto.jpg">
+<style>
+  :root {
+    --bg: #0e0a1a;
+    --card: #1a1430;
+    --text: #f4f0ff;
+    --muted: #b7a9e0;
+    --glow: #8b3dff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    min-height: 100vh;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(circle at 50% -10%, rgba(139, 61, 255, .45), transparent 55%),
+      radial-gradient(circle at 50% 120%, rgba(0, 200, 255, .18), transparent 50%),
+      var(--bg);
+    display: flex; justify-content: center;
+    padding: 48px 16px;
+  }
+  main { width: 100%; max-width: 440px; text-align: center; }
+  .avatar {
+    width: 128px; height: 128px; border-radius: 50%;
+    object-fit: cover; display: block; margin: 0 auto 16px;
+    border: 3px solid var(--glow);
+    box-shadow: 0 0 28px rgba(139, 61, 255, .7);
+  }
+  h1 { font-size: 28px; letter-spacing: .5px; }
+  .tag { color: var(--muted); margin: 8px 0 28px; line-height: 1.45; font-size: 15px; }
+  .links { display: flex; flex-direction: column; gap: 14px; }
+  a.btn {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 18px; border-radius: 14px;
+    background: var(--card); color: var(--text); text-decoration: none;
+    font-weight: 600; font-size: 17px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  a.btn:hover, a.btn:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 22px var(--c); outline: none; }
+  .ico {
+    width: 40px; height: 40px; border-radius: 10px; flex: none;
+    display: grid; place-items: center; background: var(--c);
+    font-weight: 900; font-size: 20px; color: #fff;
+  }
+  .ico svg { width: 22px; height: 22px; fill: currentColor; }
+  .lbl { flex: 1; text-align: left; }
+  .lbl small { display: block; font-weight: 400; font-size: 13px; color: var(--muted); }
+  .kick   { --c: #53fc18; } .kick .ico { color: #0b0b0b; }
+  .twitch { --c: #9146ff; }
+  .yt     { --c: #ff0033; }
+  .tt     { --c: #25f4ee; } .tt .ico { color: #0b0b0b; background: linear-gradient(135deg, #25f4ee, #fe2c55); }
+  footer { margin-top: 32px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="avatar" src="foto.jpg" alt="Foto de Manu">
+  <h1>SoyManu</h1>
+  <p class="tag">Directos de GTA 6 desde Venezuela 🇻🇪<br>Xbox Series X · en español · con el chat</p>
+
+  <nav class="links">
+    <a class="btn kick" href="https://kick.com/soym4nu" target="_blank" rel="noopener">
+      <span class="ico">K</span>
+      <span class="lbl">Kick<small>Directos</small></span>
+    </a>
+    <a class="btn twitch" href="https://www.twitch.tv/soym4nu" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M5 3 3.5 7v12h4v2.5h2.5L12.5 19h3.5l5-5V3H5Zm14 10-3 3h-4l-2.5 2.5V16H6V5h13v8Zm-3.5-5.5h-2v5h2v-5Zm-5 0h-2v5h2v-5Z"/></svg></span>
+      <span class="lbl">Twitch<small>Directos</small></span>
+    </a>
+    <a class="btn yt" href="https://www.youtube.com/@ggM4NU" target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24"><path d="M9 7.5v9l7.5-4.5L9 7.5Z"/></svg></span>
+      <span class="lbl">YouTube<small>Shorts y videos</small></span>
+    </a>
+    <a class="btn tt" href="https://www.tiktok.com/@gg.m4nu" target="_blank" rel="noopener">
+      <span class="ico">♪</span>
+      <span class="lbl">TikTok<small>Directos y clips</small></span>
+    </a>
+  </nav>
+
+  <footer>¡Nos vemos en el directo, mis panas!</footer>
+</main>
+</body>
+</html>
